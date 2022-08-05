@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
-  const splide = new Splide(".splide", {
+  const splide = new splide(".splide", {
     type: "loop",
     arrows: false,
     perMove: 3,
@@ -101,7 +101,7 @@ const updateConnectStatus = async () => {
 };
 
 async function checkChain() {
-  let chainId = 0;
+  let chainId = 137;
   if(chain === 'rinkeby') {
     chainId = 4;
   } else if(chain === 'polygon') {
